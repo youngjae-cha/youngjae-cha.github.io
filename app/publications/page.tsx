@@ -1,5 +1,6 @@
 export const dynamic = 'force-static';
 import type { Metadata } from 'next';
+import { ExternalLink, FileText } from 'lucide-react';
 import { publications } from '@/lib/publications';
 export const metadata: Metadata = { title: 'Publications', description: 'Published work by Youngjae Cha on well-being, culture, and social ecology, with links to the journal articles.' };
 export default function Publications() {
@@ -11,7 +12,7 @@ export default function Publications() {
         {p.note && <p className="meta">{p.note}</p>}
         <h3><a href={p.doi}>{p.title}</a></h3>
         <p className="authors">{p.authors}</p><p className="journal"><em>{p.journal}</em></p>
-        <div className="research-links"><a href={p.doi}>Journal article <span aria-hidden="true">↗</span></a></div>
+        <div className="research-links"><a className="action-link paper-link" href={p.doi} target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Read paper<ExternalLink aria-hidden="true" /></a></div>
       </article>)}
     </section>)}
     <section className="section prose"><h2>Work in progress</h2><p>My current projects examine psychological richness and exploration, division of labor and curiosity, economic inequality and occupational aspirations, urban places, and language-model steering.</p><a href="/research/">Read about the research</a></section>

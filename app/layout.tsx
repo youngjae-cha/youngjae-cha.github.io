@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <div className="site-shell">
       <header className="site-header"><a className="wordmark" href="/">Youngjae Cha</a><Navigation /></header>
       {children}
-      <footer className="site-footer"><p>Youngjae Cha <span>·</span> University of Chicago</p><a href="mailto:yjcha@uchicago.edu">yjcha@uchicago.edu</a></footer>
+      <footer className="site-footer"><p>Youngjae Cha <span>·</span> University of Chicago</p><div className="footer-links"><a href="mailto:yjcha@uchicago.edu">Email</a><a href="https://github.com/youngjae-cha">GitHub</a><a href="https://orcid.org/0000-0002-2194-1788">ORCID</a></div></footer>
     </div>
   </body></html>;
 }

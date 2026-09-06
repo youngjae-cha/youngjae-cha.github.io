@@ -1,5 +1,7 @@
 export const dynamic = 'force-static';
 import type { Metadata } from 'next';
+import { ExternalLink, FileText } from 'lucide-react';
+import ResearchDemos from '@/components/research-demos';
 export const metadata: Metadata = { title: 'Research', description: 'Three connected lines of research on learning new things, social conditions, and opportunities for exploration.' };
 export default function Research() {
   return <main id="main-content">
@@ -11,7 +13,7 @@ export default function Research() {
       <p>When 11,446 people across 29 countries described a good life in their own words, family and stability appeared alongside freedom, travel, learning, nature, hobbies, and making things. This work asks how measures of well-being can better capture the exploratory experiences that people value.</p>
       <h3>Related published work</h3>
       <p>My work on cognitive complexity examines differences among happy, meaningful, and psychologically rich lives. A cross-cultural meta-analysis of gratitude interventions provides another foundation for asking how well-being varies across contexts.</p>
-      <div className="research-links"><a href="https://doi.org/10.1016/j.jrp.2024.104475">Cognitive complexity · JRP</a><a href="https://doi.org/10.1073/pnas.2425193122">Gratitude interventions · PNAS</a></div>
+      <div className="research-links"><a className="action-link paper-link" href="https://doi.org/10.1016/j.jrp.2024.104475" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Cognitive complexity · JRP<ExternalLink aria-hidden="true" /></a><a className="action-link paper-link" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Gratitude interventions · PNAS<ExternalLink aria-hidden="true" /></a></div>
     </div></section>
     <section className="research-section" id="social-conditions"><span className="number">02</span><div className="prose">
       <h2>Social conditions that shape exploration</h2>
@@ -23,7 +25,7 @@ export default function Research() {
       <p>Among 1.66 million adolescents across 90 countries and economies, 43.1% named one of the ten most common jobs as their preferred occupation. I call this occupational herding. It was greater in more unequal societies, even after accounting for labor-market diversity and students’ socioeconomic backgrounds.</p>
       <p>In a preregistered experiment, adults who imagined a more unequal future became more willing to guide a child toward where other children were going rather than toward that child’s own interests. This project asks how inequality narrows the range of futures young people consider.</p>
       <p>Both projects ask whether social conditions shape more than people’s opportunities: they may also shape which possibilities people consider worth pursuing.</p>
-      <div className="research-links"><a href="https://doi.org/10.1017/S0140525X25103403">Two ecological approaches · BBS commentary</a><a href="https://doi.org/10.1093/pnasnexus/pgac224">Income inequality and happiness · PNAS Nexus</a></div>
+      <div className="research-links"><a className="action-link paper-link" href="https://doi.org/10.1017/S0140525X25103403" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Two ecological approaches · BBS commentary<ExternalLink aria-hidden="true" /></a><a className="action-link paper-link" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Income inequality and happiness · PNAS Nexus<ExternalLink aria-hidden="true" /></a></div>
     </div></section>
     <section className="research-section" id="opening-exploration"><span className="number">03</span><div className="prose">
       <h2>Opening opportunities for exploration</h2>
@@ -37,5 +39,6 @@ export default function Research() {
       <h3>Discussion and changing perspectives</h3>
       <p>With a grant from the University of Chicago’s Forum for Free Inquiry and Expression, I test whether discussion across opposing views leads people to value a life of learning and changing perspectives. I will combine the Atlas with steered conversation to test the separate and joint effects of changing opportunities to explore and prompting people to reconsider its value.</p>
     </div></section>
+    <ResearchDemos />
   </main>;
 }

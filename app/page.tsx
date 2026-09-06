@@ -1,28 +1,29 @@
 export const dynamic = 'force-static';
+import { ArrowRight, CircleUserRound, CodeXml, ExternalLink, FileText, Mail } from 'lucide-react';
+import ResearchDemos from '@/components/research-demos';
 export default function Home() {
   return (
     <main id="main-content">
-      <section className="intro">
-        <p className="eyebrow">Psychology · University of Chicago</p>
-        <h1>Youngjae Cha</h1>
-        <p className="lead">I study an overlooked part of well-being: the value of curiosity and exploration.</p>
+      <section className="intro home-intro">
+        <p className="eyebrow">Social &amp; cultural psychology · University of Chicago</p>
+        <h1>I study an overlooked part of well-being: the value of <em>curiosity</em> and <span>exploration.</span></h1>
         <p className="intro-detail">I am a Ph.D. student in psychology at the University of Chicago, working with Shigehiro Oishi. My research examines how culture and social conditions shape the value people place on exploration and their opportunities to pursue it—from the boundaries of work and the careers young people consider to the places they encounter in a city.</p>
-        <div className="text-links"><a href="mailto:yjcha@uchicago.edu">Email</a><a href="https://github.com/youngjae-cha">GitHub</a><a href="https://orcid.org/0000-0002-2194-1788">ORCID</a></div>
+        <div className="text-links"><a className="action-link" href="mailto:yjcha@uchicago.edu"><Mail aria-hidden="true" />Email</a><a className="action-link" href="https://github.com/youngjae-cha" target="_blank" rel="noopener noreferrer"><CodeXml aria-hidden="true" />GitHub</a><a className="action-link" href="https://orcid.org/0000-0002-2194-1788" target="_blank" rel="noopener noreferrer"><CircleUserRound aria-hidden="true" />ORCID</a></div>
       </section>
-      <section className="section" aria-labelledby="questions-title">
-        <div className="section-top"><h2 id="questions-title">Guiding questions</h2><a href="/research/">Research <span aria-hidden="true">↗</span></a></div>
-        <ol className="questions">
-          <li><span className="number">01</span><a href="/research/#good-life">What role does learning new things play in a good life?</a></li>
-          <li><span className="number">02</span><a href="/research/#social-conditions">How do culture and social conditions shape what people are willing to explore?</a></li>
-          <li><span className="number">03</span><a href="/research/#opening-exploration">What kinds of environments and conversations encourage exploration?</a></li>
-        </ol>
+      <section className="themes-section" aria-labelledby="questions-title">
+        <div className="section-top"><h2 id="questions-title">Questions that guide my research</h2></div>
+        <div className="themes-grid">
+          <article className="theme"><p className="meta">01 / The good life</p><h3>What place does exploration hold in a good life?</h3><p>Learning new things, psychological richness, and what people value in their lives.</p><a className="action-link" href="/research/#good-life">Research overview<ArrowRight aria-hidden="true" /></a></article>
+          <article className="theme"><p className="meta">02 / Social conditions</p><h3>What narrows the possibilities people explore?</h3><p>The division of labor, economic inequality, and the boundaries of curiosity and aspiration.</p><a className="action-link" href="/research/#social-conditions">Research overview<ArrowRight aria-hidden="true" /></a></article>
+          <article className="theme"><p className="meta">03 / Places &amp; conversations</p><h3>How can we open new opportunities for exploration?</h3><p>Third places, encounters in cities, and conversations that invite new perspectives.</p><a className="action-link" href="#atlas">Explore the Atlas<ArrowRight aria-hidden="true" /></a></article>
+        </div>
       </section>
+      <ResearchDemos />
       <section className="section" aria-labelledby="selected-title">
-        <div className="section-top"><h2 id="selected-title">Selected research</h2><a href="/publications/">Publications <span aria-hidden="true">↗</span></a></div>
-        <div className="selected-grid">
-          <article><p className="meta">PNAS · 2025</p><h3><a href="https://doi.org/10.1073/pnas.2425193122">Gratitude and well-being across cultures</a></h3><p>A meta-analysis of the effectiveness of gratitude interventions on well-being across cultures.</p></article>
-          <article><p className="meta">Ongoing research</p><h3><a href="/research/#division-of-labor">Division of labor and curiosity</a></h3><p>How specialization shapes the value people place on learning new things.</p></article>
-          <article><p className="meta">Ongoing research</p><h3><a href="/research/#llm-steering">Steering the good life in language models</a></h3><p>Separating model representations of happiness, meaning, and psychological richness to study exploration.</p></article>
+        <div className="section-top"><h2 id="selected-title">Selected publications</h2><a className="action-link" href="/publications/">All publications<ArrowRight aria-hidden="true" /></a></div>
+        <div className="selected-list">
+          <article className="selected-paper"><div><p className="selected-journal">PNAS</p><p className="selected-year">2025</p></div><div><h3>Gratitude interventions across cultures</h3><p>A meta-analysis examining gratitude interventions and well-being.</p></div><a className="action-link paper-link" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Read paper<ExternalLink aria-hidden="true" /></a></article>
+          <article className="selected-paper"><div><p className="selected-journal">PNAS Nexus</p><p className="selected-year">2022</p></div><div><h3>Income inequality and national happiness</h3><p>How economic conditions relate to the association between money and happiness.</p></div><a className="action-link paper-link" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Read paper<ExternalLink aria-hidden="true" /></a></article>
         </div>
       </section>
     </main>
