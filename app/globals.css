@@ -58,7 +58,9 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
 .page-heading { max-width: 790px; padding: 3.5rem 0 2rem; }
 .page-heading h1 { font-size: clamp(2.3rem, 5vw, 3rem); }
 .page-heading p { color: #46545e; max-width: 730px; font-size: 1.1rem; }
-.page-heading .name-native { display: flex; flex-wrap: wrap; gap: .7rem; margin: -.85rem 0 .85rem; font-size: 1.08rem; }
+.about-heading h1 { font: inherit; color: var(--muted-foreground); letter-spacing: .055em; margin: 0 0 1.1rem; }
+.about-heading p { font-size: 1rem; }
+.about-heading .about-name { color: var(--foreground); }
 .research-section { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 2.8rem 0; border-top: 1px solid var(--border); }
 .research-section .number { font-family: Georgia, serif; font-size: 1.6rem; }
 .prose { max-width: 780px; }
