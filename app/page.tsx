@@ -13,7 +13,7 @@ export default function Home() {
         <a className="action-link story-link" href="/about/">How I came to these questions<ArrowRight aria-hidden="true" /></a>
         <div className="text-links"><a className="action-link" href="mailto:yjcha@uchicago.edu"><Mail aria-hidden="true" />Email</a><a className="action-link" href="https://github.com/youngjae-cha" target="_blank" rel="noopener noreferrer"><CodeXml aria-hidden="true" />GitHub</a><a className="action-link" href="https://orcid.org/0000-0002-2194-1788" target="_blank" rel="noopener noreferrer"><CircleUserRound aria-hidden="true" />ORCID</a></div>
         </div>
-        <div className="hero-photo"><Image unoptimized priority src="/images/campus-canopy.webp" alt="Sunlight through fresh green leaves, with blue sky and stone university buildings beyond." width={1600} height={1200} sizes="(max-width: 780px) 100vw, 38vw" /></div>
+        <div className="hero-photo" aria-hidden="true"><Image unoptimized priority src="/images/campus-canopy.webp" alt="" width={1600} height={1200} sizes="100vw" /></div>
       </section>
       <section className="themes-section" aria-labelledby="questions-title">
         <div className="section-top"><h2 id="questions-title">Questions that guide my research</h2></div>

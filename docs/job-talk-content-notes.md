@@ -8,7 +8,7 @@ Web assets are compressed copies of embedded originals. Figures preserve the ent
 
 | Public asset | Embedded original | Slides | Use |
 | --- | --- | --- | --- |
-| campus-canopy.webp | image1.jpeg | 1 | Home hero |
+| campus-canopy.webp | image1.jpeg | 1 | Full-width, translucent Home background fading downward |
 | museum-visit.webp | image8.jpg | 16–17, 142 | Third-place research |
 | bookstore-browsing.webp | image74.jpg | 142 | Third-place research |
 | division-of-labor-experiments.webp | image46.png | 70–71 | Experimental paradigm and outcomes |
