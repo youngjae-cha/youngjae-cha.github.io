@@ -192,6 +192,21 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
 .research-story[open] .story-toggle { transform: rotate(45deg); }
 .story-full { margin-left: calc(220px + 1.7rem); padding: 0 0 1.5rem; }
 .page-heading .research-reading-note { font-size: .85rem; color: var(--muted-foreground); }
+.reading-heading { padding-bottom: 1rem; }
+.reading-index { gap: .2rem 1.4rem; padding-bottom: 1.8rem; }
+.reading-index a { color: var(--green); font-size: .86rem; }
+.reading-groups { border-top: 3px solid var(--foreground); }
+.reading-group { display: grid; grid-template-columns: 235px minmax(0,1fr); gap: 3rem; padding: 2.3rem 0; border-bottom: 1px solid var(--border); }
+.reading-group-heading .eyebrow { color: var(--green); font-size: .76rem; letter-spacing: .02em; }
+.reading-group-heading h2 { font-size: 1.55rem; line-height: 1.4; margin-top: .65rem; }
+.reading-list { list-style: none; padding: 0; margin: 0; min-width: 0; }
+.reading-list > li + li { border-top: 1px solid var(--border); margin-top: 1.45rem; padding-top: 1.45rem; }
+.reading-entry h3 { font: 600 1.16rem/1.45 Georgia,serif; letter-spacing: -.01em; margin: 0 0 .5rem; }
+.reading-entry h3 a { text-decoration: none; }
+.reading-entry h3 a:hover { color: var(--primary); text-decoration: underline; }
+.reading-authors { color: #45545d; font-size: .88rem; line-height: 1.65; margin: 0; }
+.reading-publication { color: var(--muted-foreground); font-size: .8rem; line-height: 1.6; margin: .15rem 0 .6rem; }
+.reading-note { color: #3e4d58; font-size: .96rem; line-height: 1.7; margin: 0; }
 @media (max-width: 780px) {
   .site-shell { padding: 0 1.5rem; }
   .site-header { align-items: flex-start; flex-direction: column; gap: .65rem; }
@@ -209,6 +224,8 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
   .research-news-row, .research-story > summary { grid-template-columns: 160px minmax(0,1fr); gap: 1.1rem; }
   .story-preview h3, .story-preview h2 { font-size: 1.3rem; }
   .story-full { margin-left: 0; }
+  .reading-group { grid-template-columns: 1fr; gap: .7rem; padding: 1.8rem 0; }
+  .reading-group-heading h2 { max-width: 540px; }
 }
 @media (max-width: 560px) {
   .research-news-row, .research-story > summary { grid-template-columns: 1fr; gap: .95rem; padding: 1.3rem 0; }

@@ -12,6 +12,7 @@ export default function Teaching() {
         <article><h3>How do cultural environments shape a good life?</h3><p>Study language in historical texts and social media to ask what people value. Distinguish cultural representations from individual experience, and changes in language from changes in psychology.</p></article>
       </div>
       <p>The same approach extends to residential mobility and general trust, and pathogen threat and place visits measured with GPS. Throughout, students would distinguish differences between places from changes within people.</p>
+      <p>For a sense of the ideas behind these questions, see <a href="/reading/">some of my favorite readings</a>, from social ecology and evolutionary theory to judgment and methods.</p>
     </section>
     <section className="section prose"><p className="eyebrow">How to test them</p><h2>Advanced Methods in Social Psychology</h2>
       <p>This graduate seminar, adaptable for advanced undergraduates, would organize methods around five problems:</p>
