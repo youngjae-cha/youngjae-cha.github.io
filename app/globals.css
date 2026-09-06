@@ -70,7 +70,7 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
 .publication h3 { font-family: Arial, Helvetica, sans-serif; font-size: 1.07rem; font-weight: 600; line-height: 1.6; margin: .3rem 0; letter-spacing: 0; }
 .publication p { margin-bottom: .2rem; }
 .authors { font-size: .95rem; color: #53616c; }
-.authors .self-author { color: #263945; font-weight: 500; }
+.authors .self-author { color: #1c2b35; font-weight: 500; }
 .journal { font-size: .96rem; }
 .publication .research-links { margin-top: .6rem; }
 .publication-title { text-decoration: none; }
