@@ -76,12 +76,39 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
 .course-list li { padding: .55rem 0; }
 .course-list strong { color: #243742; font-weight: 600; }
 .contact-block { border-left: 3px solid var(--primary); padding: .2rem 0 .2rem 1.4rem; margin: 2rem 0; }
-.home-intro { max-width: 900px; padding: 3.25rem 0 2.5rem; }
+.home-intro { max-width: none; padding: 3.25rem 0 2.8rem; display: grid; grid-template-columns: minmax(0,1.55fr) minmax(0,1fr); gap: 2.5rem; align-items: stretch; }
 .home-intro .eyebrow { font-size: .78rem; letter-spacing: .075em; text-transform: uppercase; }
-.home-intro h1 { font-size: clamp(2.1rem, 4.3vw, 3.1rem); max-width: 900px; margin-top: 1.1rem; }
+.home-intro h1 { font-size: clamp(2.1rem, 3.7vw, 2.85rem); max-width: 900px; margin-top: 1.1rem; }
 .home-intro h1 em { color: var(--primary); font-style: normal; }
 .home-intro h1 span { color: var(--green); }
 .home-intro .intro-detail { max-width: 800px; margin-top: 1.25rem; }
+.hero-copy { padding: .6rem 0; }
+.hero-photo { overflow: hidden; border-radius: 3px; min-height: 430px; background: var(--mint); }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 42% center; }
+.home-intro .text-links { margin-top: 1rem; gap: .5rem 1.25rem; }
+.story-link { color: var(--green); }
+.green-text { color: var(--green); }
+.about-story { max-width: 740px; padding-bottom: 1rem; }
+.about-story h2:not(:first-child) { margin-top: 2.3rem; }
+.story-scenes { border-left: 2px solid #a3cfbe; padding-left: 1.5rem; margin: 1.7rem 0; }
+.prose .story-question { color: var(--green); font: 400 1.65rem/1.5 Georgia,serif; margin: 1.7rem 0; }
+.research-figure { margin: 1.8rem 0; }
+.research-figure img { display: block; width: 100%; height: auto; }
+.research-figure figcaption, .places-photo-pair figcaption, .figure-note { font-size: .85rem; line-height: 1.65; color: var(--muted-foreground); margin-top: .85rem; }
+.experiment-figure { max-width: 670px; padding: 1.25rem; border: 1px solid var(--border); border-radius: 4px; background: #fff; }
+.figure-details { margin-top: 1.8rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.figure-details summary { color: var(--green); cursor: pointer; }
+.figure-details > p { margin-top: 1rem; }
+.places-photo-pair { margin: 1.5rem 0 1.8rem; }
+.places-photo-pair > div { display: grid; grid-template-columns: 1.4fr 1fr; gap: .8rem; height: 270px; }
+.places-photo-pair img { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; min-height: 0; }
+.places-photo-pair img:last-child { object-position: 50% 61%; }
+.map-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.5rem 0 .5rem; }
+.map-comparison figure { margin: 0; }
+.map-comparison img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 3px; }
+.map-comparison figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .2rem .5rem; margin-top: .6rem; font-size: .84rem; }
+.map-comparison figcaption strong { font-weight: 500; }
+.map-comparison figcaption span { color: var(--muted-foreground); }
 .action-link { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.4rem; font-size: .9rem; text-decoration: none; }
 .action-link svg { width: 1rem; height: 1rem; flex-shrink: 0; }
 .paper-link { border: 1px solid var(--border); padding: .3rem .7rem; border-radius: 5px; background: #fff; }
@@ -136,6 +163,9 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
   .site-header { align-items: flex-start; flex-direction: column; gap: .65rem; }
   nav { gap: .3rem 1.1rem; }
   .intro { padding: 2.6rem 0 2rem; }
+  .home-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero-photo { min-height: 0; height: clamp(230px,50vw,340px); }
+  .hero-photo img { object-position: center 42%; }
   .lead { font-size: 1.4rem; }
   .selected-grid { grid-template-columns: 1fr; gap: 1.45rem; }
   .selected-grid article { max-width: 600px; }
@@ -145,6 +175,9 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
   .selected-paper .paper-link { grid-column: 2; justify-self: start; }
 }
 @media (max-width: 560px) {
+  .places-photo-pair > div { height: 210px; gap: .6rem; }
+  .map-comparison { grid-template-columns: 1fr; gap: 1.4rem; }
+  .experiment-figure { padding: .65rem; }
   .themes-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .demo-panel { padding: 1.4rem 1.1rem; margin-left: -.25rem; margin-right: -.25rem; }
   .atlas-flow { grid-template-columns: 1fr; gap: 1rem; padding-bottom: .8rem; }
