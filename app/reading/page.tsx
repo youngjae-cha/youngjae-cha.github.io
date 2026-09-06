@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { readingGroups } from '@/lib/readings';
 
 export const metadata: Metadata = {
-  title: 'Reading · Ideas I return to',
+  title: 'Reading · I’m a fan of these!',
   description: 'Some of Youngjae Cha’s favorite papers, chapters, and books on social ecology, evolution, social thought, and research methods.',
 };
 
@@ -11,7 +11,7 @@ export default function Reading() {
   return <main id="main-content">
     <header className="page-heading reading-heading">
       <p className="eyebrow">Reading</p>
-      <h1>Ideas I return to</h1>
+      <h1>I’m a fan of these!</h1>
       <p>Some of my favorite papers, chapters, and books. They ask how our surroundings shape us, how we make sense of one another, and how to study those connections. I’ve grouped them by the questions they open up.</p>
     </header>
     <nav className="reading-index" aria-label="Reading topics">
