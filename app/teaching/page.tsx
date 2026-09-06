@@ -3,26 +3,35 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = { title: 'Teaching & Mentoring', description: 'Teaching social psychology and research methods, and mentoring students in research design, writing, and independent projects.' };
 export default function Teaching() {
   return <main id="main-content">
-    <header className="page-heading"><p className="eyebrow">Teaching &amp; Mentoring</p><h1>Connecting social conditions<br />to individual psychology.</h1><p>I want students to learn how to ask precise questions about the environments people live in—and how to test those questions.</p></header>
-    <section className="section prose"><h2>Research mentoring</h2>
-      <p>Much of my teaching happens through close work with students on research. I have mentored master’s and undergraduate researchers at the University of Chicago and undergraduate researchers at the University of Virginia. My role includes framing research questions, developing designs, working through analyses, and revising manuscripts and grant proposals.</p>
-      <p>I help students distinguish a broad idea from a testable question, decide what evidence would support it, and consider how findings might hold across different measures and methods. Students I have mentored are co-authors on published and submitted papers and have developed proposals for independent research funding.</p>
-      <p>At Chicago, I received the Ruth Sosis Memorial Fellowship following nominations from current and former undergraduate research assistants I had mentored.</p>
+    <header className="page-heading"><p className="eyebrow">Teaching &amp; Mentoring</p><h1>Connecting social conditions<br />to individual psychology.</h1><p>I want students to practice sociological imagination: to connect the wider conditions of people’s lives to what they think, feel, and do—and learn how to test those connections. I would pair two advanced courses: one on the questions, the other on the methods.</p></header>
+    <section className="section prose"><p className="eyebrow">The questions</p><h2>Socioecological Psychology</h2>
+      <p>This seminar would connect cultural and evolutionary psychology with sociology, anthropology, and behavioral ecology. Students would ask how people respond to their environments, how those responses form collective patterns, and how those patterns change the environment in turn.</p>
+      <div className="teaching-examples">
+        <article><h3>Can the structure of work narrow curiosity?</h3><p>Use division of labor to connect an institutional arrangement to individual motivation. Define specialization and curiosity, then decide what observations and experiments would test the proposed link.</p></article>
+        <article><h3>Can a different street change how people relate?</h3><p>Draw on my ongoing comparison of car-free and ordinary days in Chicago neighborhoods. Examine social interaction and belonging, while asking what comparisons across places and times can establish without random assignment.</p></article>
+        <article><h3>How do cultural environments shape a good life?</h3><p>Study language in historical texts and social media to ask what people value. Distinguish cultural representations from individual experience, and changes in language from changes in psychology.</p></article>
+      </div>
+      <p>The same approach extends to residential mobility and general trust, and pathogen threat and place visits measured with GPS. Throughout, students would distinguish differences between places from changes within people.</p>
     </section>
-    <section className="section prose"><h2>Teaching experience</h2>
-      <p>My classroom experience includes teaching assistantships and guest lectures. At Chicago, I have served as a TA for Social Psychology, Cognitive Psychology, and the Psychology of Stereotyping and Prejudice. I led weekly discussion sections of approximately 20 students alongside large undergraduate lectures.</p>
-      <p>In discussion, I use small-group conversations to give students time to develop an idea before sharing it with the class. I also work through research figures slowly, connecting the question to the design, the evidence, and the interpretation.</p>
-      <p>I gave a guest lecture on socioecological psychology at Chicago and an invited lecture on psychological richness at the University of Mannheim.</p>
+    <section className="section prose"><p className="eyebrow">How to test them</p><h2>Advanced Methods in Social Psychology</h2>
+      <p>This graduate seminar, adaptable for advanced undergraduates, would organize methods around five problems:</p>
+      <ol className="course-list">
+        <li><strong>Testing causal claims.</strong> Following Wilson, Aronson, and Carlsmith’s chapter in the <em>Handbook of Social Psychology</em>, students would examine how constructs become manipulations, how random assignment supports causal inference, and how construct validity and generalizability constrain conclusions. This unit includes laboratory, field, and natural experiments.</li>
+        <li><strong>Studying change.</strong> Secondary and archival data, cross-national measurement, and panel and time-series designs.</li>
+        <li><strong>Measuring environments.</strong> GPS and mobility data, spatial analysis, and individual- versus place-level inference.</li>
+        <li><strong>Studying cultural representations.</strong> Dictionaries, embeddings, and LLM representations applied to social media and historical texts.</li>
+        <li><strong>Connecting individuals to collective patterns.</strong> Agent-based models, drawing on my ongoing work, to examine how individual rules generate group-level outcomes.</li>
+      </ol>
+      <p>In R and Python, students would assemble data for a question of their own, produce a reproducible analysis, and test an alternative measurement or analytic choice. My methods paper, under revision at <em>Advances in Methods and Practices in Psychological Science</em>, would guide work with secondary data. A future seminar on AI and collective intelligence would extend the final unit.</p>
     </section>
-    <section className="section prose"><h2>Courses I am prepared to teach</h2>
-      <ul className="course-list">
-        <li><strong>Social Psychology.</strong> Core theories, classic findings, and contemporary evidence about how social contexts shape thought, feeling, and behavior.</li>
-        <li><strong>Well-Being.</strong> Happiness, meaning, psychological richness, and the cultural and social conditions that shape a good life.</li>
-        <li><strong>Socioecological Psychology.</strong> How objective, often distal conditions connect to individual psychology, drawing on cultural psychology, evolutionary approaches, sociology, and anthropology.</li>
-        <li><strong>Advanced Research Methods.</strong> Hands-on work with secondary data, longitudinal and spatial analyses, and natural language processing, alongside experimental approaches to testing causal claims.</li>
-        <li><strong>Experimental Design.</strong> Turning theoretical questions into experiments through manipulation, random assignment, measurement, and careful interpretation.</li>
-      </ul>
-      <p>Across these courses, methods serve a theoretical question. Students should leave knowing not only how to run an analysis, but what the evidence can—and cannot—tell them.</p>
+    <section className="section prose"><h2>Core Social Psychology &amp; Well-Being</h2>
+      <p>In Social Psychology and Research Methods, I would connect classic experiments with supervised field projects. For conformity, I would pair Asch’s experiments with a field experiment I conducted as an undergraduate, varying how many people stood on one side of a subway-station escalator to examine when later arrivals followed.</p>
+      <p>The Psychology of Well-Being and the Good Life would cover happiness, meaning, psychological richness, and cultural variation. Our <a href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer">cross-cultural meta-analysis of gratitude interventions in <em>PNAS</em></a> would help students learn to synthesize intervention evidence and distinguish differences across countries from evidence explaining those differences.</p>
+    </section>
+    <section className="section prose"><h2>Research mentoring &amp; teaching experience</h2>
+      <p>My most sustained teaching experience is in research mentoring. At Chicago, I have mentored five master’s students and undergraduate researchers; I have also mentored undergraduates at Virginia and in Korea. We work closely on research questions, study designs, manuscripts, and independent funding proposals. Several students are co-authors on published or submitted papers. Their nominations led to my receiving the Ruth Sosis Memorial Fellowship.</p>
+      <p>My classroom experience is as a teaching assistant and guest lecturer. At Chicago, I assisted with two Social Psychology courses of more than 200 students each, led weekly discussion sections, and gave a full-class guest lecture on socioecological psychology. I also taught R as a TA at Virginia.</p>
+      <p>In sections, I move from small-group discussion to examining a research figure together: what was the question, what was compared, and what can we conclude? Students valued the opportunity to hear from classmates. Their requests for clearer participation criteria also inform my plan to provide a rubric at the start of my own courses.</p>
     </section>
   </main>;
 }

@@ -15,6 +15,8 @@ Web assets are compressed copies of embedded originals. Figures preserve the ent
 | rich-places-san-francisco.webp | image80.png | 149–150 | Spatial clustering example |
 | rich-places-los-angeles.webp | image81.png | 151–152 | Spatial dispersion example |
 | good-life-in-poetry.webp | image103.png | 191 | Expandable work-in-progress example |
+| career-possibilities.webp | image57.jpeg | 99 | Illustrative occupational-aspiration thumbnail |
+| ai-conversation.webp | image6.jpeg | 16–17 | Illustrative AI-conversation thumbnail, not the actual demo interface |
 
 The map comparison retains the original embedded attribution and adds readable OpenStreetMap/CARTO attribution in the page copy.
 

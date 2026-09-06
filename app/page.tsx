@@ -1,7 +1,8 @@
 export const dynamic = 'force-static';
-import { ArrowRight, CircleUserRound, CodeXml, ExternalLink, FileText, Mail } from 'lucide-react';
+import { ArrowRight, CircleUserRound, CodeXml, ExternalLink, Mail } from 'lucide-react';
 import Image from 'next/image';
 import ResearchDemos from '@/components/research-demos';
+import ResearchHighlights from '@/components/research-highlights';
 export default function Home() {
   return (
     <main id="main-content">
@@ -15,20 +16,13 @@ export default function Home() {
         </div>
         <div className="hero-photo" aria-hidden="true"><Image unoptimized priority src="/images/campus-canopy.webp" alt="" width={1600} height={1200} sizes="100vw" /></div>
       </section>
-      <section className="themes-section" aria-labelledby="questions-title">
-        <div className="section-top"><h2 id="questions-title">Questions that guide my research</h2></div>
-        <div className="themes-grid">
-          <article className="theme"><p className="meta">01 / The good life</p><h3>What place does exploration hold in a good life?</h3><p>Learning new things, psychological richness, and what people value in their lives.</p><a className="action-link" href="/research/#good-life">Research overview<ArrowRight aria-hidden="true" /></a></article>
-          <article className="theme"><p className="meta">02 / What constrains it?</p><h3>What narrows the possibilities people explore?</h3><p>The division of labor, economic inequality, and the boundaries of curiosity and aspiration.</p><a className="action-link" href="/research/#social-conditions">Research overview<ArrowRight aria-hidden="true" /></a></article>
-          <article className="theme"><p className="meta">03 / What expands it?</p><h3>How can we open new opportunities for exploration?</h3><p>Third places, encounters in cities, and conversations that invite new perspectives.</p><a className="action-link" href="#atlas">Explore the Atlas<ArrowRight aria-hidden="true" /></a></article>
-        </div>
-      </section>
+      <ResearchHighlights />
       <ResearchDemos />
       <section className="section" aria-labelledby="selected-title">
         <div className="section-top"><h2 id="selected-title">Selected publications</h2><a className="action-link" href="/publications/">All publications<ArrowRight aria-hidden="true" /></a></div>
         <div className="selected-list">
-          <article className="selected-paper"><div><p className="selected-journal">PNAS</p><p className="selected-year">2025</p></div><div><h3>Gratitude interventions across cultures</h3><p>A meta-analysis examining gratitude interventions and well-being.</p></div><a className="action-link paper-link" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Read paper<ExternalLink aria-hidden="true" /></a></article>
-          <article className="selected-paper"><div><p className="selected-journal">PNAS Nexus</p><p className="selected-year">2022</p></div><div><h3>Income inequality and national happiness</h3><p>How economic conditions relate to the association between money and happiness.</p></div><a className="action-link paper-link" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Read paper<ExternalLink aria-hidden="true" /></a></article>
+          <article className="selected-paper"><p className="selected-journal">PNAS</p><div><h3><a className="publication-title" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer">Gratitude interventions across cultures<ExternalLink aria-hidden="true" /></a></h3><p>A meta-analysis examining gratitude interventions and well-being.</p></div></article>
+          <article className="selected-paper"><p className="selected-journal">PNAS Nexus</p><div><h3><a className="publication-title" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer">Income inequality and national happiness<ExternalLink aria-hidden="true" /></a></h3><p>How economic conditions relate to the association between money and happiness.</p></div></article>
         </div>
       </section>
     </main>
