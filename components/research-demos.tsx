@@ -39,7 +39,7 @@ export default function ResearchDemos() {
       </div>
       <details className="study-details">
         <summary>The research behind the conversation</summary>
-        <p><cite>Psychology’s New Lever: Steering the Good Life Inside Large Language Models</cite><br />Abstract submitted to SPSP.</p>
+        <p><a href="/research/#llm-steering"><cite>Psychology’s New Lever: Steering the Good Life Inside Large Language Models</cite></a><br />Abstract submitted to SPSP 2027; decision pending.</p>
         <p>We identified nearly orthogonal directions corresponding to happiness, meaning, and psychological richness within one language model and experimentally steered those directions. In a collaborator-choice task, richness steering increased exploration, happiness steering decreased it, and meaning steering had no effect.</p>
         <p>In a preregistered study, participants who talked with a richness-steered model rated the conversation as more perspective-broadening and reported greater interest in an initially dismissed social issue than those who talked with a baseline model. Happiness steering showed no comparable pattern.</p>
       </details>

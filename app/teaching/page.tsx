@@ -1,10 +1,10 @@
 export const dynamic = 'force-static';
 import type { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Teaching & Mentoring', description: 'Teaching social psychology and research methods, and mentoring students in research design, writing, and independent projects.' };
+export const metadata: Metadata = { title: 'Teaching & Mentoring', description: 'Course plans in social psychology, well-being, and research methods, alongside teaching and research mentoring experience.' };
 export default function Teaching() {
   return <main id="main-content">
-    <header className="page-heading"><p className="eyebrow">Teaching &amp; Mentoring</p><h1>Connecting social conditions<br />to individual psychology.</h1><p>I want students to practice sociological imagination: to connect the wider conditions of people’s lives to what they think, feel, and do—and learn how to test those connections. I would pair two advanced courses: one on the questions, the other on the methods.</p></header>
-    <section className="section prose"><p className="eyebrow">The questions</p><h2>Socioecological Psychology</h2>
+    <header className="page-heading"><p className="eyebrow">Teaching &amp; Mentoring</p><h1>Connecting social conditions<br />to individual psychology.</h1><p>Drawing on my research, teaching assistantships, guest lectures, and research mentoring, I am prepared to teach social psychology, well-being, and research methods. I would also develop advanced seminars that help students connect broader social conditions to individual psychology—and learn how to test those connections.</p></header>
+    <section className="section prose"><p className="eyebrow">Course plans</p><h2>Socioecological Psychology</h2>
       <p>This seminar would connect cultural and evolutionary psychology with sociology, anthropology, and behavioral ecology. Students would ask how people respond to their environments, how those responses form collective patterns, and how those patterns change the environment in turn.</p>
       <div className="teaching-examples">
         <article><h3>Can the structure of work narrow curiosity?</h3><p>Use division of labor to connect an institutional arrangement to individual motivation. Define specialization and curiosity, then decide what observations and experiments would test the proposed link.</p></article>
@@ -17,7 +17,7 @@ export default function Teaching() {
     <section className="section prose"><p className="eyebrow">How to test them</p><h2>Advanced Methods in Social Psychology</h2>
       <p>This graduate seminar, adaptable for advanced undergraduates, would organize methods around five problems:</p>
       <ol className="course-list">
-        <li><strong>Testing causal claims.</strong> Following Wilson, Aronson, and Carlsmith’s chapter in the <em>Handbook of Social Psychology</em>, students would examine how constructs become manipulations, how random assignment supports causal inference, and how construct validity and generalizability constrain conclusions. This unit includes laboratory, field, and natural experiments.</li>
+        <li><strong>Testing causal claims.</strong> Following Wilson, Aronson, and Carlsmith’s chapter in the <em>Handbook of Social Psychology</em>, students would examine how constructs become manipulations, how random assignment supports causal inference, and how construct validity and generalizability constrain conclusions. This unit would include laboratory, field, and natural experiments.</li>
         <li><strong>Studying change.</strong> Secondary and archival data, cross-national measurement, and panel and time-series designs.</li>
         <li><strong>Measuring environments.</strong> GPS and mobility data, spatial analysis, and individual- versus place-level inference.</li>
         <li><strong>Studying cultural representations.</strong> Dictionaries, embeddings, and LLM representations applied to social media and historical texts.</li>
@@ -29,7 +29,7 @@ export default function Teaching() {
       <p>In Social Psychology and Research Methods, I would connect classic experiments with supervised field projects. For conformity, I would pair Asch’s experiments with a field experiment I conducted as an undergraduate, varying how many people stood on one side of a subway-station escalator to examine when later arrivals followed.</p>
       <p>The Psychology of Well-Being and the Good Life would cover happiness, meaning, psychological richness, and cultural variation. Our <a href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer">cross-cultural meta-analysis of gratitude interventions in <em>PNAS</em></a> would help students learn to synthesize intervention evidence and distinguish differences across countries from evidence explaining those differences.</p>
     </section>
-    <section className="section prose"><h2>Research mentoring &amp; teaching experience</h2>
+    <section className="section prose"><h2>Teaching &amp; mentoring experience</h2>
       <p>My most sustained teaching experience is in research mentoring. At Chicago, I have mentored five master’s students and undergraduate researchers; I have also mentored undergraduates at Virginia and in Korea. We work closely on research questions, study designs, manuscripts, and independent funding proposals. Several students are co-authors on published or submitted papers. Their nominations led to my receiving the Ruth Sosis Memorial Fellowship.</p>
       <p>My classroom experience is as a teaching assistant and guest lecturer. At Chicago, I assisted with two Social Psychology courses of more than 200 students each, led weekly discussion sections, and gave a full-class guest lecture on socioecological psychology. I also taught R as a TA at Virginia.</p>
       <p>In sections, I move from small-group discussion to examining a research figure together: what was the question, what was compared, and what can we conclude? Students valued the opportunity to hear from classmates. Their requests for clearer participation criteria also inform my plan to provide a rubric at the start of my own courses.</p>

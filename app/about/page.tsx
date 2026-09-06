@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = { title: 'About & Contact', description: 'About Youngjae Cha, a psychology Ph.D. student at the University of Chicago working with Shigehiro Oishi.' };
 export default function About() {
   return <main id="main-content">
-    <header className="page-heading"><p className="eyebrow">About &amp; Contact</p><h1>Youngjae Cha</h1><p>Ph.D. student in psychology<br />University of Chicago</p></header>
+    <header className="page-heading"><p className="eyebrow">About &amp; Contact</p><h1>Youngjae Cha</h1><p className="name-native" lang="ko">차영재 <span>車榮載</span></p><p>Ph.D. student in psychology<br />University of Chicago</p></header>
     <div className="prose about-story">
       <h2>A life of learning new things</h2>
       <p>I like following my curiosity and learning new things. But I remember three moments when that way of living ran up against other values.</p>

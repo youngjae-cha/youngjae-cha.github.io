@@ -14,7 +14,7 @@ export default function Publications() {
     {groups.map(group => <section className="section publications-group" key={group.id} aria-labelledby={group.id}><h2 id={group.id}>{group.title}</h2>
       {publications.filter(p => p.category === group.id).map(p => <article className="publication" key={p.doi}>
         <h3><a className="publication-title" href={p.doi} target="_blank" rel="noopener noreferrer">{p.title}<ExternalLink aria-hidden="true" /></a></h3>
-        <p className="authors">{p.authors.split(/(Cha, Y\.(?: J\.)?)/g).map((part, index) => /^Cha, Y\.(?: J\.)?$/.test(part) ? <span className="self-author" key={index}>{part}</span> : part)}</p><p className="journal"><em>{p.journal}</em>{p.note && <span className="publication-note"> · {p.note}</span>}</p>
+        <p className="authors">{p.authors.split(/(Cha, Y\.(?: J\.)?)/g).map((part, index) => /^Cha, Y\.(?: J\.)?$/.test(part) ? <span className="self-author" key={index}>{part}</span> : part)} ({p.year}).</p><p className="journal"><em>{p.journal}</em>{p.note && <span className="publication-note"> · {p.note}</span>}</p>
       </article>)}
     </section>)}
     <section className="section prose"><h2>Work in progress</h2><p>My current projects examine psychological richness and exploration, division of labor and curiosity, economic inequality and occupational aspirations, urban places, and language-model steering.</p><a href="/research/">Read about the research</a></section>

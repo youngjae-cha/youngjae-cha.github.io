@@ -18,6 +18,13 @@ export default function Research() {
       <p>My work on cognitive complexity examines differences among happy, meaningful, and psychologically rich lives. A cross-cultural meta-analysis of gratitude interventions provides another foundation for asking how well-being varies across contexts.</p>
       <div className="research-links"><a className="action-link paper-link" href="https://doi.org/10.1016/j.jrp.2024.104475" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Cognitive complexity · JRP<ExternalLink aria-hidden="true" /></a><a className="action-link paper-link" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Gratitude interventions · PNAS<ExternalLink aria-hidden="true" /></a></div>
       <details className="figure-details"><summary>How ideals of a good life change over time</summary><p>In ongoing work, I use natural-language analysis of poetry to study how ideals of a good life change across historical and cultural contexts. This extends the same question beyond present-day surveys: when do learning, adventure, and changing perspectives become part of the life people imagine?</p><figure className="research-figure"><a href="/images/good-life-in-poetry.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the historical poetry figure at full size"><Image unoptimized src="/images/good-life-in-poetry.webp" alt="A preliminary analysis of British poetry from 1600 to 2000, showing distinct historical patterns for facilitators of happiness, meaning, and psychological richness." width={2200} height={1027} loading="lazy" /></a><figcaption>Work in progress: facilitators of a good life in British poetry, 1600–2000. H., M., and PR denote happiness, meaning, and psychological richness.</figcaption></figure></details>
+      <div className="related-work">
+        <h3>Related work</h3>
+        <ul>
+          <li><cite>Can Reddit Reveal the Emotional Signatures of Happy, Meaningful, and Psychologically Rich Lives?</cite><p className="work-status">Presenter: Youngjae Cha · Talk submitted to SPSP 2027; decision pending.</p></li>
+          <li><cite>Contribution to the proposed symposium “Vacuums of Meaning”</cite><p className="work-status">Invited contributor: Youngjae Cha · SPSP 2027 symposium submitted; decision pending.</p></li>
+        </ul>
+      </div>
     </ResearchStory>
     <span id="social-conditions" />
     <ResearchStory id="division-of-labor">
@@ -44,6 +51,10 @@ export default function Research() {
       <p>In a preregistered human experiment, participants who conversed with a richness-steered model rated the conversation as more perspective-broadening and reported greater interest in a previously dismissed social issue than those who conversed with a baseline model. This approach provides a way to manipulate model representations of psychological concepts—and to test what conversations built around them can do.</p>
       <h3>Discussion and changing perspectives</h3>
       <p>With a grant from the University of Chicago’s Forum for Free Inquiry and Expression, I test whether discussion across opposing views leads people to value a life of learning and changing perspectives. I will combine the Atlas with steered conversation to test the separate and joint effects of changing opportunities to explore and prompting people to reconsider its value.</p>
+      <div className="related-work" id="lever-related-work">
+        <h3>Related work</h3>
+        <ul><li><cite>Psychology’s New Lever: Steering the Good Life Inside Large Language Models</cite><p className="work-status">Presenter: Youngjae Cha · Talk submitted to SPSP 2027; decision pending.</p></li></ul>
+      </div>
     </ResearchStory>
     </div>
     <ResearchDemos />
