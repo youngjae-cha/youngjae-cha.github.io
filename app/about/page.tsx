@@ -10,13 +10,12 @@ export default function About() {
     </header>
     <div className="prose about-story">
       <h2>A life of learning new things</h2>
-      <p>I like following my curiosity and learning new things. But I remember three moments when that way of living ran up against other values.</p>
+      <p>I like following my curiosity and learning new things. But that way of living has sometimes run up against other expectations.</p>
       <div className="story-scenes">
         <p>In middle school, my physics teacher asked me to close my eyes, then asked my classmates to raise their hands if they thought my questions were slowing the class down. I was sent out of the classroom.</p>
-        <p>At university, my adviser told me that studying was not simply something to enjoy. It should be a sustained pursuit of a defined purpose, with meaning rooted in contributing to the community.</p>
         <p>In graduate school, a senior peer warned that continually studying new concepts would leave my CV without a clear focus. I should choose my research topics strategically.</p>
       </div>
-      <p>Efficiency, meaning, and expertise all matter. But I could see a gap between those expectations and the life I wanted.</p>
+      <p>Efficiency and expertise both matter. But I could see a gap between those expectations and the life I wanted.</p>
       <p className="story-question">Why is learning new things so often asked to serve another purpose?</p>
       <p>Later, I encountered a related puzzle in research. Across societies, people who prefer a psychologically rich life over a happy or meaningful one are a minority. Yet in our university sample, that preference was more common among first-year than fourth-year students. Why? As people acquire a major and a specialty, might their interests shift from what they would like to learn toward what they need to know?</p>
       <h2>What constrains it, and what expands it?</h2>
