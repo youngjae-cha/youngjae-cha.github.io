@@ -23,7 +23,7 @@ export default function Teaching() {
         <li><strong>Studying cultural representations.</strong> Dictionaries, embeddings, and LLM representations applied to social media and historical texts.</li>
         <li><strong>Connecting individuals to collective patterns.</strong> Agent-based models, drawing on my ongoing work, to examine how individual rules generate group-level outcomes.</li>
       </ol>
-      <p>In R and Python, students would assemble data for a question of their own, produce a reproducible analysis, and test an alternative measurement or analytic choice. My methods paper, under revision at <em>Advances in Methods and Practices in Psychological Science</em>, would guide work with secondary data. A future seminar on AI and collective intelligence would extend the final unit.</p>
+      <p>In R and Python, students would assemble data for a question of their own, produce a reproducible analysis, and test an alternative measurement or analytic choice. My <a href="/publications/#post-hoc-multiverse">methods paper</a>, under revision at <em>Advances in Methods and Practices in Psychological Science</em>, would guide work with secondary data. A future seminar on AI and collective intelligence would extend the final unit.</p>
     </section>
     <section className="section prose"><h2>Core Social Psychology &amp; Well-Being</h2>
       <p>In Social Psychology and Research Methods, I would connect classic experiments with supervised field projects. For conformity, I would pair Asch’s experiments with a field experiment I conducted as an undergraduate, varying how many people stood on one side of a subway-station escalator to examine when later arrivals followed.</p>

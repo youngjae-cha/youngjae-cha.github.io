@@ -16,7 +16,7 @@ export default function ResearchDemos() {
         <div className="demo-heading">
           <p className="demo-kicker">Third places · Space &amp; exploration</p>
           <h2 id="atlas-title">Chicago Experience Atlas</h2>
-          <p className="demo-description">Reflect on your well-being, then explore places beyond home and work through happiness, meaning, and psychological richness.</p>
+          <p className="demo-description">The Chicago prototype of the Good Life Atlas. Reflect on your well-being, then explore places beyond home and work through happiness, meaning, and psychological richness.</p>
         </div>
         <a className="action-link demo-button" href={atlasUrl} target="_blank" rel="noopener noreferrer">Explore the Atlas <ExternalLink aria-hidden="true" /></a>
       </div>
@@ -39,7 +39,7 @@ export default function ResearchDemos() {
       </div>
       <details className="study-details">
         <summary>The research behind the conversation</summary>
-        <p><a href="/research/#llm-steering"><cite>Psychology’s New Lever: Steering the Good Life Inside Large Language Models</cite></a><br />Abstract submitted to SPSP 2027; decision pending.</p>
+        <p><a href="/publications/#llm-steering"><cite>Psychology’s New Lever: Steering the Good Life Inside Large Language Models</cite></a><br />Manuscript in preparation · Abstract submitted to SPSP 2027; decision pending.</p>
         <p>We identified nearly orthogonal directions corresponding to happiness, meaning, and psychological richness within one language model and experimentally steered those directions. In a collaborator-choice task, richness steering increased exploration, happiness steering decreased it, and meaning steering had no effect.</p>
         <p>In a preregistered study, participants who talked with a richness-steered model rated the conversation as more perspective-broadening and reported greater interest in an initially dismissed social issue than those who talked with a baseline model. Happiness steering showed no comparable pattern.</p>
       </details>

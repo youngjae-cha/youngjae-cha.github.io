@@ -1,6 +1,13 @@
 export type PublicationCategory = 'wellbeing' | 'ecology' | 'cognition';
-export type Publication = { year: number; authors: string; title: string; journal: string; doi: string; category: PublicationCategory; note?: string };
+export type Publication = { year: number | 'in press'; authors: string; title: string; journal: string; doi?: string; category: PublicationCategory; note?: string };
 export const publications: Publication[] = [
+  {
+    year: 'in press',
+    authors: 'Oishi, S., & Cha, Y.',
+    title: 'The signature emotions of a happy life, a meaningful life, and a psychologically rich life.',
+    category: 'wellbeing',
+    journal: 'Affective Science.'
+  },
   {
     "year": 2026,
     "authors": "Cha, Y., Ingram, M., & Oishi, S.",
@@ -137,6 +144,13 @@ export const publications: Publication[] = [
     "category": "cognition",
     "journal": "Evolutionary Psychology, 18(2), 1474704920916455.",
     "doi": "https://doi.org/10.1177/1474704920916455"
+  },
+  {
+    year: 2019,
+    authors: 'Cha, Y., Baek, S., Lee, H., Bae, J., Lee, J., Lee, S.-H., Kim, G., & Jang, D.',
+    title: 'Combating Identity Threat of Machine: The effect of group-affirmation on humans’ intellectual performance loss.',
+    category: 'cognition',
+    journal: 'Korean Journal of Cognitive Science, 30(3), 157–174.'
   },
   {
     "year": 2017,
