@@ -2,11 +2,12 @@ export type PublicationCategory = 'wellbeing' | 'ecology' | 'cognition';
 export type Publication = { year: number | 'in press'; authors: string; title: string; journal: string; doi?: string; category: PublicationCategory; note?: string };
 export const publications: Publication[] = [
   {
-    year: 'in press',
+    year: 2026,
     authors: 'Oishi, S., & Cha, Y.',
     title: 'The signature emotions of a happy life, a meaningful life, and a psychologically rich life.',
     category: 'wellbeing',
-    journal: 'Affective Science.'
+    journal: 'Affective Science, 7, 513–522.',
+    doi: 'https://doi.org/10.1007/s42761-026-00393-6'
   },
   {
     "year": 2026,
@@ -131,7 +132,7 @@ export const publications: Publication[] = [
   },
   {
     "year": 2020,
-    "authors": "Cha, Y., Baek, S., Ahn, G., Lee, H., Lee, B., Shin, J., & Jang, D.",
+    "authors": "Cha, Y., Baek, S., Ahn, G., Lee, H., Lee, B., Shin, J.-E., & Jang, D.",
     "title": "Compensating for the loss of human distinctiveness: The use of social creativity under Human–Machine comparisons.",
     "category": "cognition",
     "journal": "Computers in Human Behavior, 103, 80–90.",
@@ -150,7 +151,8 @@ export const publications: Publication[] = [
     authors: 'Cha, Y., Baek, S., Lee, H., Bae, J., Lee, J., Lee, S.-H., Kim, G., & Jang, D.',
     title: 'Combating Identity Threat of Machine: The effect of group-affirmation on humans’ intellectual performance loss.',
     category: 'cognition',
-    journal: 'Korean Journal of Cognitive Science, 30(3), 157–174.'
+    journal: 'Korean Journal of Cognitive Science, 30(3), 157–174.',
+    doi: 'https://doi.org/10.19066/cogsci.2019.30.3.003'
   },
   {
     "year": 2017,

@@ -14,7 +14,7 @@ export const researchStories = [
     title: 'When does “not my job” become “not worth knowing”?',
     description: 'Dividing work helps us become efficient. My experiments ask what happens to curiosity when people take on a narrow role—even their curiosity about things outside the task.',
     image: '/images/division-of-labor-experiments.webp',
-    alt: 'Bicycle assembly and trivia tasks used to study specialization and curiosity.',
+    alt: 'Virtual motorbike assembly and trivia tasks used to study specialization and curiosity.',
     width: 780, height: 536,
     figure: true,
   },

@@ -22,7 +22,7 @@ export default function Home() {
         <div className="section-top"><h2 id="selected-title">Selected publications</h2><a className="action-link" href="/publications/">All publications<ArrowRight aria-hidden="true" /></a></div>
         <div className="selected-list">
           <article className="selected-paper"><p className="selected-journal">PNAS</p><div><h3><a className="publication-title" href="https://doi.org/10.1073/pnas.2425193122" target="_blank" rel="noopener noreferrer">Gratitude interventions across cultures<ExternalLink aria-hidden="true" /></a></h3><p>A meta-analysis examining gratitude interventions and well-being.</p></div></article>
-          <article className="selected-paper"><p className="selected-journal">PNAS Nexus</p><div><h3><a className="publication-title" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer">Income inequality and national happiness<ExternalLink aria-hidden="true" /></a></h3><p>How economic conditions relate to the association between money and happiness.</p></div></article>
+          <article className="selected-paper"><p className="selected-journal">PNAS Nexus</p><div><h3><a className="publication-title" href="https://doi.org/10.1093/pnasnexus/pgac224" target="_blank" rel="noopener noreferrer">Inequality and the income–happiness link<ExternalLink aria-hidden="true" /></a></h3><p>How economic conditions relate to the association between money and happiness.</p></div></article>
         </div>
       </section>
     </main>

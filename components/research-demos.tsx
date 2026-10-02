@@ -1,7 +1,7 @@
 import { ArrowRight, ExternalLink, MessagesSquare } from 'lucide-react';
 import Image from 'next/image';
 
-const atlasUrl = 'https://chicagowellbeingmap.github.io/github_pages/';
+const atlasUrl = 'https://goodlifeatlas.net/';
 const conversationUrl = 'https://web-production-34ba2.up.railway.app/';
 const atlasSteps = [
   { number: '01', label: 'Discover your good life', image: 'welcome', alt: 'Atlas welcome screen: Discover your good life, with a button to begin the assessment.' },
