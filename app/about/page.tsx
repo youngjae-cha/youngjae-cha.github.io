@@ -1,5 +1,6 @@
 export const dynamic = 'force-static';
 import type { Metadata } from 'next';
+import Photography from '@/components/photography';
 export const metadata: Metadata = { title: 'About & Contact', description: 'About Youngjae Cha, a psychology Ph.D. student at the University of Chicago working with Shigehiro Oishi.' };
 export default function About() {
   return <main id="main-content">
@@ -23,6 +24,9 @@ export default function About() {
       <p>My interest also draws me to Mill’s “experiments in living,” Dewey’s ideas about experience and growth, the wanderings of Hesse’s Goldmund, and Romantic poetry that celebrates inquiry and adventure. Shigehiro Oishi’s concept of psychological richness gave that interest a language within psychology. Working with him, I combine experiments with large-scale and historical data, natural-language processing, and spatial analysis to study how the wider social world constrains—and sometimes opens—a life of curiosity and learning new things.</p>
       <p>My current dream is to become a good psychologist. One day, I hope my research on the interplay between environments and the mind will lead me to become an architect, too.</p>
       <p>I’ve also collected some of my favorite theories and papers on my <a href="/reading/">reading page</a>.</p>
+    </div>
+    <Photography />
+    <div className="prose about-contact">
       <div className="contact-block"><h2>Get in touch</h2><a href="mailto:yjcha@uchicago.edu">yjcha@uchicago.edu</a></div>
       <div className="text-links"><a href="https://psychology.uchicago.edu/directory/youngjae-cha">University profile</a><a href="https://voices.uchicago.edu/oishilab/">Oishi Lab</a><a href="https://github.com/youngjae-cha">GitHub</a><a href="https://orcid.org/0000-0002-2194-1788">ORCID</a></div>
     </div>
