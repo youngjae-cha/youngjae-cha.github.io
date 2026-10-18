@@ -120,8 +120,8 @@ nav a[aria-current='page'] { color: var(--primary); text-decoration: underline; 
 .about-story h2:not(:first-child) { margin-top: 2.3rem; }
 .photography { max-width: 740px; margin-top: 1.5rem; padding-bottom: 1rem; }
 .photography h2 { font-size: 1.65rem; }
-.photography-grid { display: grid; max-width: 660px; gap: 1.1rem; }
-.photography-row { display: grid; gap: .8rem; align-items: start; }
+.photography-grid { --photography-gap: .8rem; display: grid; max-width: 660px; gap: 1.1rem; }
+.photography-row { display: grid; max-width: 100%; gap: var(--photography-gap); align-items: start; }
 .photography-item { min-width: 0; margin: 0; }
 .photography-thumbnail { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
 .photography-thumbnail img { display: block; width: 100%; height: auto; }
