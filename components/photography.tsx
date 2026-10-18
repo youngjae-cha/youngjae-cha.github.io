@@ -12,16 +12,11 @@ export default function Photography() {
   const closeButton = useRef<HTMLButtonElement | null>(null);
   const photo = photographs[selected ?? 0];
   const move = (direction: number) => setSelected(current => current === null ? null : (current + direction + photographs.length) % photographs.length);
-  const rows = [photographs.slice(0, 3), photographs.slice(3)];
-  const referenceRatio = rows[0].reduce((sum, item) => sum + item.width / item.height, 0);
 
   return <section className="photography section" id="photography" aria-labelledby="photography-title">
     <h2 id="photography-title">Looking Around</h2>
     <div className="photography-grid">
-      {rows.map((row, rowIndex) => <div className="photography-row" key={rowIndex} style={{
-        gridTemplateColumns: row.map(item => `${item.width / item.height}fr`).join(' '),
-        width: `calc((100% - ${(rows[0].length - 1)} * var(--photography-gap)) * ${row.reduce((sum, item) => sum + item.width / item.height, 0) / referenceRatio} + ${(row.length - 1)} * var(--photography-gap))`,
-      }}>
+      {[photographs.slice(0, 3), photographs.slice(3)].map((row, rowIndex) => <div className="photography-row" key={rowIndex} style={{ gridTemplateColumns: row.map(item => `${item.width / item.height}fr`).join(' ') }}>
         {row.map((item, columnIndex) => <figure className="photography-item" key={item.id}>
           <button type="button" className="photography-thumbnail" aria-haspopup="dialog" aria-label={`Enlarge photograph: ${item.alt} ${item.date.replace('-', '/')} · ${item.city}`} onClick={event => {
             opener.current = event.currentTarget;
