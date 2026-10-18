@@ -14,7 +14,7 @@ export default function Photography() {
   const move = (direction: number) => setSelected(current => current === null ? null : (current + direction + photographs.length) % photographs.length);
 
   return <section className="photography section" id="photography" aria-labelledby="photography-title">
-    <h2 id="photography-title">Photography</h2>
+    <h2 id="photography-title">Looking Around</h2>
     <div className="photography-grid">
       {[photographs.slice(0, 3), photographs.slice(3)].map((row, rowIndex) => <div className="photography-row" key={rowIndex} style={{ gridTemplateColumns: row.map(item => `${item.width / item.height}fr`).join(' ') }}>
         {row.map((item, columnIndex) => <figure className="photography-item" key={item.id}>
@@ -36,7 +36,7 @@ export default function Photography() {
           if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); }
           if (event.key === 'ArrowRight') { event.preventDefault(); move(1); }
         }}>
-          <Dialog.Title className="sr-only">Photography</Dialog.Title>
+          <Dialog.Title className="sr-only">Looking Around</Dialog.Title>
           <div className="photography-toolbar">
             <span className="photography-counter" aria-live="polite" aria-atomic="true">{(selected ?? 0) + 1} / {photographs.length}<span className="sr-only">. {photo.alt} {photo.date.replace('-', '/')} · {photo.city}</span></span>
             <Dialog.Close ref={closeButton} className="photography-control" aria-label="Close photograph"><X aria-hidden="true" /></Dialog.Close>
